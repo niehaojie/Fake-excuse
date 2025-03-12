@@ -35,7 +35,7 @@
             }
     
             var correctPassword = getCurrentTimePassword();
-            var userInput = prompt("请输入访问密码(haojienie:)");
+            var userInput = prompt("haojienie:请输入访问密码");
     
             console.log("正确密码:", correctPassword);  
             console.log("用户输入:", userInput);  
@@ -43,7 +43,7 @@
             if (userInput !== null && userInput.trim() === correctPassword) {
                 document.body.style.display = "block";  
             } else {
-                alert("密码错误，无法访问！");
+                alert("老弟，你错了！");
                 document.body.innerHTML = "";  
             }
         };
